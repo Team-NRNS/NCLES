@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Age Verification</title>
+    <style>
+        body {
+            font-family: Times New Roman, serif;
+        }
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 25px;
+			font-family: Times New Roman, serif;
+        }
+        input {
+            width: 50px;
+            padding: 5px;
+            margin-right: 5px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+        #message {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Age Verification</h1>
+    <label for="age">Enter your age:</label>
+    <input type="number" id="age" min="0">
+    <button onclick="verifyAge()">Submit</button>
+    <p id="message"></p>
+</div>
+
+<script>
+    function verifyAge() {
+        let age = document.getElementById("age").value;
+        let message = document.getElementById("message");
+
+        if (age === "") {
+            message.innerHTML = "";
+        } else if (age >= 18) {
+            message.innerHTML = "Welcome to the site!";
+        } else {
+            message.innerHTML = "Sorry, you must be 18 or older to enter.";
+        }
+    }
+</script>
+
+</body>
+</html>
