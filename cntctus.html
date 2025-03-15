@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #FFB6C1;
+        }
+
+        
+        nav {
+            background-color: #4B0082;
+            overflow: hidden; 
+        }
+
+        
+        nav a {
+            float: left; 
+            display: block; 
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px; 
+        }
+
+        
+        nav a:hover {
+            background-color: #9400D3;
+        }
+
+
+        p {
+            color: #FFFFFF;
+			text-align: center;
+            font-size: 15px;
+        }
+		
+		.container {
+		    width: 100%;
+			max-width: 600px;
+			margin: 60px auto;
+			padding: 20px
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 5px 10px rgba(1,1,1,1);	
+		}
+		
+		.container h1 {
+		    text-align: center;
+			margin-bottom: 20px;
+			color: #333;
+		}
+		
+		form input,
+		form textarea {
+		    display: block;
+			width: 91%;
+			margin: 15px;
+			margin-bottom: 10px;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #f7f7f7;
+			color: #333;
+		}
+		
+		form input:focus,
+		form textarea:focus {
+		    outline:none;
+			box-shadow: 0 0 5px #333;
+		}
+		
+		form button {
+		    display: block;
+			width: 91%;
+			margin: 15px;
+			padding: 10px;
+			border: none;
+			border-radius: 5px; 
+			background-color: #333;
+			color: #fff;
+			cursor: pointer;
+		}
+		
+		form button: hover{
+		    background-color: #555;
+		}
+		
+		footer {
+           position: absolute;
+           bottom: 0;
+           left: 0;
+           width: 100%;
+           text-align: center;
+           padding: 5px;
+           color: #FFFFFF;
+           font-size: 20px;
+           background-color: #4B0082;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+	    <a href="hme.html">Home</a>
+        <a href="abtus.html">About Us</a>
+        <a href="prdcts.html">Products</a>
+    </nav>
+	
+    <div class="container">
+	<h1>Contact Us</h1>
+	<form>
+	  <form action="mailto:makinaco.official@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">SUBMIT</button>
+      </form>
+	
+	</div>
+	
+<footer>
+<p>OR Send an Email directly - MAKINAco@gmail.com <br> &copy; 2024 Maki & Nika. All rights reserved.</p>
+</footer>
+</body>
+</html>
